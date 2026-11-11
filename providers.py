@@ -1,8 +1,20 @@
 """Bốn provider cùng một interface. Không chứa agent loop."""
 import json
 import os
+from pathlib import Path
 import urllib.error
 import urllib.request
+
+# Tự động nạp cấu hình từ .env nếu tồn tại
+_env_path = Path(__file__).resolve().parent / '.env'
+if _env_path.exists():
+    for line in _env_path.read_text(encoding='utf-8').splitlines():
+        line = line.strip()
+        if line and not line.startswith('#') and '=' in line:
+            k, v = line.split('=', 1)
+            k, v = k.strip(), v.strip().strip("'\"")
+            if k and v and k not in os.environ:
+                os.environ[k] = v
 
 CONFIG = {
     'openai': ('OPENAI_API_KEY', 'https://api.openai.com/v1/chat/completions'),
@@ -12,16 +24,24 @@ CONFIG = {
 }
 
 
+import time
+
 def post_json(url, headers, payload):
     req = urllib.request.Request(url, data=json.dumps(payload).encode(), headers={'Content-Type': 'application/json', **headers})
-    try:
-        with urllib.request.urlopen(req, timeout=60) as response:
-            return json.load(response)
-    except urllib.error.HTTPError as exc:
-        # Do not print response bodies: they may contain account or request data.
-        raise RuntimeError(f'Provider trả HTTP {exc.code}; kiểm tra model, key và quota.') from exc
-    except urllib.error.URLError as exc:
-        raise RuntimeError(f'Không kết nối được provider: {exc.reason}') from exc
+    max_retries = 5
+    for attempt in range(max_retries):
+        try:
+            with urllib.request.urlopen(req, timeout=60) as response:
+                return json.load(response)
+        except urllib.error.HTTPError as exc:
+            if exc.code == 429 and attempt < max_retries - 1:
+                # Rate limit (429) của Gemini free tier cần nghỉ một chút trước khi retry
+                time.sleep(4 * (attempt + 1))
+                continue
+            # Do not print response bodies: they may contain account or request data.
+            raise RuntimeError(f'Provider trả HTTP {exc.code}; kiểm tra model, key và quota.') from exc
+        except urllib.error.URLError as exc:
+            raise RuntimeError(f'Không kết nối được provider: {exc.reason}') from exc
 
 
 class Provider:
