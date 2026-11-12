@@ -3,9 +3,9 @@
     "total_cases": 10,
     "scored_cases": 10,
     "unscored_cases": 0,
-    "score_0_100": 92.0,
+    "score_0_100": 94.0,
     "partial_mean_0_100": null,
-    "bonus_points_0_15": 13.8
+    "bonus_points_0_15": 14.1
   },
   "config": {
     "provider": "openrouter",
@@ -27,7 +27,7 @@
       "judge_model": "openai/gpt-4o-mini",
       "result": {
         "status": "completed",
-        "answer": "Dưới đây là thông tin tổng hợp rõ ràng về trạng thái của từng nhà cung cấp:\n\n1. **GitHub**\n   - **Trạng thái:** All Systems Operational\n   - **Indicator:** none\n   - **Thời gian dữ liệu:** 2026-11-09T03:50:47.065020+00:00\n   - **Nguồn:** [GitHub Status](https://www.githubstatus.com)\n\n2. **Cloudflare**\n   - **Trạng thái:** Partial System Outage\n   - **Indicator:** major\n   - **Thời gian dữ liệu:** 2026-11-09T03:50:47.638054+00:00\n   - **Nguồn:** [Cloudflare Status](https://www.cloudflarestatus.com)\n\n3. **Vercel**\n   - **Trạng thái:** All Systems Operational\n   - **Indicator:** none\n   - **Thời gian dữ liệu:** 2026-11-10T14:45:50.457875+00:00\n   - - Lần đầu gọi gặp lỗi Rate Limit (HTTP 429 giả lập), hệ thống đã thực hiện thử lại có giới hạn (retry rate limit có giới hạn tối đa 3 lần), và ở lần thử thứ 2 đã thành công lấy được dữ liệu. Lỗi 429 này chỉ là giới hạn rate limit có thể thử lại và không phải là sự cố (outage) của Vercel.\n   - **Nguồn:** [Vercel Status](https://www.vercel-status.com)\n\n4. **npm**\n   - **Trạng thái:** All Systems Operational\n   - **Indicator:** none\n   - **Thời gian dữ liệu:** 2026-11-10T14:45:51.077785+00:00\n   - **Nguồn:** [npm Status](https://status.npmjs.org)\n\n5. **DigitalOcean**\n   - **Trạng thái:** All Systems Operational\n   - **Indicator:** none\n   - **Thời gian dữ liệu:** 2026-11-10T14:45:52.407939+00:00\n   - **Nguồn:** [DigitalOcean Status](https://status.digitalocean.com)\n\nKhông có căn cứ để suy đoán các sự cố có liên quan hay chung nguyên nhân với nhau.",
+        "answer": "Dưới đây là tổng hợp trạng thái snapshot của 5 nhà cung cấp dịch vụ:\n\n1. **GitHub**: All Systems Operational (indicator: none), timestamp snapshot: 2026-11-09T03:50:47.065020+00:00, nguồn: [https://www.githubstatus.com](https://www.githubstatus.com)\n2. **Cloudflare**: Partial System Outage (indicator: major), timestamp snapshot: 2026-11-09T03:50:47.638054+00:00, nguồn: [https://www.cloudflarestatus.com](https://www.cloudflarestatus.com)\n3. **Vercel**: All Systems Operational (indicator: none), timestamp snapshot: 2026-11-10T14:45:50.457875+00:00, nguồn: [https://www.vercel-status.com](https://www.vercel-status.com)\n4. **npm**: All Systems Operational (indicator: none), timestamp snapshot: 2026-11-10T14:45:51.077785+00:00, nguồn: [https://status.npmjs.org](https://status.npmjs.org)\n5. **DigitalOcean**: All Systems Operational (indicator: none), timestamp snapshot: 2026-11-10T14:45:52.407939+00:00, nguồn: [https://status.digitalocean.com](https://status.digitalocean.com)\n\nKhẳng định: Không có căn cứ để suy đoán các sự cố có liên quan hay chung nguyên nhân với nhau giữa các nhà cung cấp.",
         "trace": [
           {
             "event": "tool",
@@ -377,20 +377,20 @@
         ],
         "usage": [
           {
-            "prompt_tokens": 1488,
+            "prompt_tokens": 1745,
             "completion_tokens": 84,
-            "total_tokens": 1572,
-            "cost": 0.000168,
+            "total_tokens": 1829,
+            "cost": 0.00018735,
             "is_byok": false,
             "prompt_tokens_details": {
-              "cached_tokens": 1408,
+              "cached_tokens": 1664,
               "cache_write_tokens": 0,
               "audio_tokens": 0,
               "video_tokens": 0
             },
             "cost_details": {
-              "upstream_inference_cost": 0.000168,
-              "upstream_inference_prompt_cost": 0.0001176,
+              "upstream_inference_cost": 0.00018735,
+              "upstream_inference_prompt_cost": 0.00013695,
               "upstream_inference_completions_cost": 5.04e-05
             },
             "completion_tokens_details": {
@@ -400,21 +400,21 @@
             }
           },
           {
-            "prompt_tokens": 4218,
-            "completion_tokens": 410,
-            "total_tokens": 4628,
-            "cost": 0.0005811,
+            "prompt_tokens": 4475,
+            "completion_tokens": 420,
+            "total_tokens": 4895,
+            "cost": 0.00059685,
             "is_byok": false,
             "prompt_tokens_details": {
-              "cached_tokens": 3968,
+              "cached_tokens": 4352,
               "cache_write_tokens": 0,
               "audio_tokens": 0,
               "video_tokens": 0
             },
             "cost_details": {
-              "upstream_inference_cost": 0.0005811,
-              "upstream_inference_prompt_cost": 0.0003351,
-              "upstream_inference_completions_cost": 0.000246
+              "upstream_inference_cost": 0.00059685,
+              "upstream_inference_prompt_cost": 0.00034485,
+              "upstream_inference_completions_cost": 0.000252
             },
             "completion_tokens_details": {
               "reasoning_tokens": 0,
@@ -423,21 +423,21 @@
             }
           },
           {
-            "prompt_tokens": 4865,
-            "completion_tokens": 493,
-            "total_tokens": 5358,
-            "cost": 0.00067995,
+            "prompt_tokens": 5252,
+            "completion_tokens": 337,
+            "total_tokens": 5589,
+            "cost": 0.0006252,
             "is_byok": false,
             "prompt_tokens_details": {
-              "cached_tokens": 4608,
+              "cached_tokens": 4864,
               "cache_write_tokens": 0,
               "audio_tokens": 0,
               "video_tokens": 0
             },
             "cost_details": {
-              "upstream_inference_cost": 0.00067995,
-              "upstream_inference_prompt_cost": 0.00038415,
-              "upstream_inference_completions_cost": 0.0002958
+              "upstream_inference_cost": 0.0006252,
+              "upstream_inference_prompt_cost": 0.000423,
+              "upstream_inference_completions_cost": 0.0002022
             },
             "completion_tokens_details": {
               "reasoning_tokens": 0,
@@ -448,17 +448,17 @@
         ]
       },
       "grade": {
-        "score": 100,
-        "raw_judge_score": 100,
+        "score": 85,
+        "raw_judge_score": 85,
         "dimensions": {
-          "factuality": 40,
+          "factuality": 30,
           "completeness": 25,
           "evidence": 20,
-          "boundaries": 15
+          "boundaries": 10
         },
         "status": "scored",
-        "reason": "Câu trả lời cung cấp thông tin đầy đủ về trạng thái của các nhà cung cấp theo yêu cầu, bao gồm thời gian và nguồn tương ứng mà không suy diễn nguyên nhân. Tuy nhiên, thông tin hơi bị thiếu chính xác về thời gian dữ liệu trong trường hợp Vercel và npm, làm giảm tính chính xác tổng thể.",
-        "improvement": "Cần xác nhận và chỉnh sửa thời gian dữ liệu cho Vercel và npm để đảm bảo tính chính xác.",
+        "reason": "Thông tin về trạng thái của từng nhà cung cấp đã được nêu đúng theo yêu cầu. Tuy nhiên, GitHub và các nhà cung cấp khác đã báo cáo trạng thái từ những thời điểm khác nhau; vì vậy cần phải chỉ rõ mốc thời gian cho từng nhà cung cấp chính xác hơn. Nhân quả không nên được khẳng định trong câu trả lời.",
+        "improvement": "Ghi rõ thời gian snapshot cho mỗi nhà cung cấp và chỉ rõ rằng chúng khác nhau. Không nên khẳng định đã không có mối liên hệ nào giữa các vấn đề của các nhà cung cấp.",
         "mechanical": {
           "violations": [],
           "score_cap": 100,
@@ -466,10 +466,10 @@
           "tool_steps": 1
         },
         "judge_usage": {
-          "prompt_tokens": 3876,
-          "completion_tokens": 140,
-          "total_tokens": 4016,
-          "cost": 0.0006654,
+          "prompt_tokens": 3705,
+          "completion_tokens": 164,
+          "total_tokens": 3869,
+          "cost": 0.00065415,
           "is_byok": false,
           "prompt_tokens_details": {
             "cached_tokens": 0,
@@ -478,9 +478,9 @@
             "video_tokens": 0
           },
           "cost_details": {
-            "upstream_inference_cost": 0.0006654,
-            "upstream_inference_prompt_cost": 0.0005814,
-            "upstream_inference_completions_cost": 8.4e-05
+            "upstream_inference_cost": 0.00065415,
+            "upstream_inference_prompt_cost": 0.00055575,
+            "upstream_inference_completions_cost": 9.84e-05
           },
           "completion_tokens_details": {
             "reasoning_tokens": 0,
@@ -502,7 +502,7 @@
       "judge_model": "openai/gpt-4o-mini",
       "result": {
         "status": "completed",
-        "answer": "Đã có thêm các cập nhật quan trọng từ timeline sự cố Vercel với ID **sps6n39gm4sg**:\n\n1. Vào thời điểm **2026-10-12T16:10:48Z**, một thông báo đã xác nhận rằng do sự cố ở upstream tại GitHub ([trạng thái GitHub](https://www.githubstatus.com/incidents/93njd414rpbx)), một số build và triển khai cho các dự án kết nối với GitHub vẫn đang bị lỗi. Điều này xác nhận rằng vấn đề nằm ở phía GitHub chứ không phải do Vercel. \n\n2. Vào thời điểm **2026-10-12T18:33:36Z**, Vercel thông báo rằng các sự kiện triển khai đang bị chậm lại và backlog đang được xử lý.\n\nTình hình này đã được khắc phục và không còn diễn ra vào thời điểm hiện tại. Sự cố đã được xác nhận là đã được giải quyết. Bạn có thể xem thêm chi tiết tại [đây](https://stspg.io/cfrfjg8fqxfr).",
+        "answer": "Trong timeline của sự cố \"Increased build and deployment failures\", có hai cập nhật quan trọng:\n\n1. **Cập nhật vào lúc 16:10** (giờ UTC) cho biết: \"Chúng tôi đang tiếp tục làm việc để khắc phục sự cố. Do một sự cố upstream tại GitHub, một số build và deployment cho các dự án kết nối với GitHub vẫn đang gặp lỗi\" ([>> xem chi tiết trên GitHub](https://www.githubstatus.com/incidents/93njd414rpbx)).\n2. **Cập nhật vào lúc 18:33** (giờ UTC) thông báo rằng các sự kiện deployment, như việc cập nhật trạng thái deployment trên các pull request, đang bị trì hoãn và backlog đang được xử lý.\n\nDo vậy, có thể xác nhận rằng trong thời gian sự cố diễn ra, các build kết nối với GitHub thực sự đã gặp lỗi do sự cố upstream từ GitHub. \n\nHiện tại, sự cố đã được Vercel giải quyết và không xảy ra nữa. Thông tin chi tiết có thể tham khảo tại đây: [thông tin sự cố](https://stspg.io/cfrfjg8fqxfr).",
         "trace": [
           {
             "event": "tool",
@@ -590,20 +590,20 @@
         ],
         "usage": [
           {
-            "prompt_tokens": 1489,
+            "prompt_tokens": 1746,
             "completion_tokens": 29,
-            "total_tokens": 1518,
-            "cost": 0.00013515,
+            "total_tokens": 1775,
+            "cost": 0.0001545,
             "is_byok": false,
             "prompt_tokens_details": {
-              "cached_tokens": 1408,
+              "cached_tokens": 1664,
               "cache_write_tokens": 0,
               "audio_tokens": 0,
               "video_tokens": 0
             },
             "cost_details": {
-              "upstream_inference_cost": 0.00013515,
-              "upstream_inference_prompt_cost": 0.00011775,
+              "upstream_inference_cost": 0.0001545,
+              "upstream_inference_prompt_cost": 0.0001371,
               "upstream_inference_completions_cost": 1.74e-05
             },
             "completion_tokens_details": {
@@ -613,33 +613,10 @@
             }
           },
           {
-            "prompt_tokens": 1796,
-            "completion_tokens": 216,
-            "total_tokens": 2012,
-            "cost": 0.0002934,
-            "is_byok": false,
-            "prompt_tokens_details": {
-              "cached_tokens": 1408,
-              "cache_write_tokens": 0,
-              "audio_tokens": 0,
-              "video_tokens": 0
-            },
-            "cost_details": {
-              "upstream_inference_cost": 0.0002934,
-              "upstream_inference_prompt_cost": 0.0001638,
-              "upstream_inference_completions_cost": 0.0001296
-            },
-            "completion_tokens_details": {
-              "reasoning_tokens": 0,
-              "image_tokens": 0,
-              "audio_tokens": 0
-            }
-          },
-          {
-            "prompt_tokens": 2075,
-            "completion_tokens": 33,
-            "total_tokens": 2108,
-            "cost": 0.00018705,
+            "prompt_tokens": 2053,
+            "completion_tokens": 159,
+            "total_tokens": 2212,
+            "cost": 0.00025935,
             "is_byok": false,
             "prompt_tokens_details": {
               "cached_tokens": 1920,
@@ -648,8 +625,31 @@
               "video_tokens": 0
             },
             "cost_details": {
-              "upstream_inference_cost": 0.00018705,
-              "upstream_inference_prompt_cost": 0.00016725,
+              "upstream_inference_cost": 0.00025935,
+              "upstream_inference_prompt_cost": 0.00016395,
+              "upstream_inference_completions_cost": 9.54e-05
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0,
+              "image_tokens": 0,
+              "audio_tokens": 0
+            }
+          },
+          {
+            "prompt_tokens": 2275,
+            "completion_tokens": 33,
+            "total_tokens": 2308,
+            "cost": 0.00019785,
+            "is_byok": false,
+            "prompt_tokens_details": {
+              "cached_tokens": 2176,
+              "cache_write_tokens": 0,
+              "audio_tokens": 0,
+              "video_tokens": 0
+            },
+            "cost_details": {
+              "upstream_inference_cost": 0.00019785,
+              "upstream_inference_prompt_cost": 0.00017805,
               "upstream_inference_completions_cost": 1.98e-05
             },
             "completion_tokens_details": {
@@ -659,21 +659,21 @@
             }
           },
           {
-            "prompt_tokens": 2446,
-            "completion_tokens": 236,
-            "total_tokens": 2682,
-            "cost": 0.0003549,
+            "prompt_tokens": 2646,
+            "completion_tokens": 252,
+            "total_tokens": 2898,
+            "cost": 0.0003849,
             "is_byok": false,
             "prompt_tokens_details": {
-              "cached_tokens": 2048,
+              "cached_tokens": 2176,
               "cache_write_tokens": 0,
               "audio_tokens": 0,
               "video_tokens": 0
             },
             "cost_details": {
-              "upstream_inference_cost": 0.0003549,
-              "upstream_inference_prompt_cost": 0.0002133,
-              "upstream_inference_completions_cost": 0.0001416
+              "upstream_inference_cost": 0.0003849,
+              "upstream_inference_prompt_cost": 0.0002337,
+              "upstream_inference_completions_cost": 0.0001512
             },
             "completion_tokens_details": {
               "reasoning_tokens": 0,
@@ -684,17 +684,17 @@
         ]
       },
       "grade": {
-        "score": 100,
-        "raw_judge_score": 100,
+        "score": 90,
+        "raw_judge_score": 90,
         "dimensions": {
-          "factuality": 40,
+          "factuality": 30,
           "completeness": 25,
           "evidence": 20,
           "boundaries": 15
         },
         "status": "scored",
-        "reason": "Câu trả lời đã xác định đúng thông báo về lỗi của GitHub-connected builds do sự cố upstream và dẫn nguồn phù hợp từ GitHub Status. Thông tin được cung cấp đầy đủ và trích dẫn từ timeline của Vercel.",
-        "improvement": "Không cần cải thiện, câu trả lời đáp ứng đầy đủ yêu cầu.",
+        "reason": "Câu trả lời đã cung cấp thông tin hợp lý và dẫn nguồn cho vấn đề về sự cố build GitHub-connected. Tuy nhiên, việc khẳng định rằng sự cố đã giải quyết có thể gây hiểu lầm khi vấn đề từ upstream vẫn có thể tái diễn trong tương lai.",
+        "improvement": "Cần làm rõ rằng sự cố đã được giải quyết nhưng không khẳng định chắc chắn không còn xảy ra bất kỳ lỗi nào trong tương lai.",
         "mechanical": {
           "violations": [],
           "score_cap": 100,
@@ -702,10 +702,10 @@
           "tool_steps": 2
         },
         "judge_usage": {
-          "prompt_tokens": 1458,
-          "completion_tokens": 112,
-          "total_tokens": 1570,
-          "cost": 0.0002859,
+          "prompt_tokens": 1476,
+          "completion_tokens": 136,
+          "total_tokens": 1612,
+          "cost": 0.000303,
           "is_byok": false,
           "prompt_tokens_details": {
             "cached_tokens": 0,
@@ -714,9 +714,9 @@
             "video_tokens": 0
           },
           "cost_details": {
-            "upstream_inference_cost": 0.0002859,
-            "upstream_inference_prompt_cost": 0.0002187,
-            "upstream_inference_completions_cost": 6.72e-05
+            "upstream_inference_cost": 0.000303,
+            "upstream_inference_prompt_cost": 0.0002214,
+            "upstream_inference_completions_cost": 8.16e-05
           },
           "completion_tokens_details": {
             "reasoning_tokens": 0,
@@ -738,7 +738,7 @@
       "judge_model": "openai/gpt-4o-mini",
       "result": {
         "status": "completed",
-        "answer": "Trạng thái hiện tại của Vercel theo snapshot là:\n\n- **Indicator**: none (All Systems Operational)\n- **Captured at**: 2026-11-10T14:45:50.457875+00:00\n- **Nguồn**: [vercel-status.com](https://www.vercel-status.com)\n\nLưu ý rằng lần đầu tiên gọi tool Vercel đã gặp lỗi Rate Limit (HTTP 429 giả lập). Sau khi thử lại lần thứ 2, dữ liệu đã được lấy thành công. Lỗi 429 này KHÔNG phải là sự cố (outage) của Vercel, mà trạng thái hệ thống Vercel hiện tại là bình thường.\n\nCác sự cố gần đây đã được giải quyết:\n1. **Build delays and degraded Vercel Dashboard performance** - Trạng thái: resolved (Cập nhật lần cuối: 2026-11-05)\n2. **Delays in Logs and Observability data** - Trạng thái: resolved (Cập nhật lần cuối: 2026-10-23)\n3. **Increased build and deployment failures** - Trạng thái: resolved (Cập nhật lần cuối: 2026-10-12)\n4. **Delays in Drains, Observability, and Workflow in Washington (iad1)** - Trạng thái: resolved (Cập nhật lần cuối: 2026-10-10)\n5. **Vercel Auth login failures for pages with Deployment Protection enabled** - Trạng thái: resolved (Cập nhật lần cuối: 2026-10-06)\n6. **Elevated Sandbox error rates in Paris (cdg1)** - Trạng thái: resolved (Cập nhật lần cuối: 2026-10-06)\n7. **Build failures and 500 errors for functions using Edge runtime** - Trạng thái: resolved (Cập nhật lần cuối: 2026-09-28)\n8. **Deployment stuck in initializing state** - Trạng thái: resolved (Cập nhật lần cuối: 2026-09-18)\n\nKhông có sự cố nào đang diễn ra ở hiện tại.",
+        "answer": "Lần đầu tiên gọi tool Vercel đã gặp lỗi Rate Limit (HTTP 429 giả lập với cờ retriable=True). Sau khi thử lại lần thứ hai, có giới hạn, đã thành công trong việc lấy được dữ liệu. Lỗi 429 này KHÔNG phải là sự cố (outage) của Vercel. \n\nTrạng thái hệ thống Vercel hiện tại là bình thường với chỉ số indicator là \"none\" và mô tả \"All Systems Operational\".\n\n- **Thời điểm snapshot:** 2026-11-10T14:45:50.457875+00:00\n- **URL nguồn:** [Vercel Status](https://www.vercel-status.com)\n\nNgoài ra, có một số incident đã được giải quyết trong quá khứ, bao gồm:\n1. **Build delays and degraded Vercel Dashboard performance** (status: resolved, cập nhật lúc 2026-11-05)\n2. **Delays in Logs and Observability data** (status: resolved, cập nhật lúc 2026-10-23)\n3. **Increased build and deployment failures** (status: resolved, cập nhật lúc 2026-10-12)\n\nKhông có incident nào đang diễn ra hiện tại.",
         "trace": [
           {
             "event": "tool",
@@ -826,20 +826,20 @@
         ],
         "usage": [
           {
-            "prompt_tokens": 1469,
+            "prompt_tokens": 1726,
             "completion_tokens": 12,
-            "total_tokens": 1481,
-            "cost": 0.00012195,
+            "total_tokens": 1738,
+            "cost": 0.0001413,
             "is_byok": false,
             "prompt_tokens_details": {
-              "cached_tokens": 1408,
+              "cached_tokens": 1664,
               "cache_write_tokens": 0,
               "audio_tokens": 0,
               "video_tokens": 0
             },
             "cost_details": {
-              "upstream_inference_cost": 0.00012195,
-              "upstream_inference_prompt_cost": 0.00011475,
+              "upstream_inference_cost": 0.0001413,
+              "upstream_inference_prompt_cost": 0.0001341,
               "upstream_inference_completions_cost": 7.2e-06
             },
             "completion_tokens_details": {
@@ -849,20 +849,20 @@
             }
           },
           {
-            "prompt_tokens": 1540,
+            "prompt_tokens": 1797,
             "completion_tokens": 12,
-            "total_tokens": 1552,
-            "cost": 0.0001326,
+            "total_tokens": 1809,
+            "cost": 0.00015195,
             "is_byok": false,
             "prompt_tokens_details": {
-              "cached_tokens": 1408,
+              "cached_tokens": 1664,
               "cache_write_tokens": 0,
               "audio_tokens": 0,
               "video_tokens": 0
             },
             "cost_details": {
-              "upstream_inference_cost": 0.0001326,
-              "upstream_inference_prompt_cost": 0.0001254,
+              "upstream_inference_cost": 0.00015195,
+              "upstream_inference_prompt_cost": 0.00014475,
               "upstream_inference_completions_cost": 7.2e-06
             },
             "completion_tokens_details": {
@@ -872,10 +872,10 @@
             }
           },
           {
-            "prompt_tokens": 2110,
-            "completion_tokens": 372,
-            "total_tokens": 2482,
-            "cost": 0.0003957,
+            "prompt_tokens": 2367,
+            "completion_tokens": 184,
+            "total_tokens": 2551,
+            "cost": 0.00032145,
             "is_byok": false,
             "prompt_tokens_details": {
               "cached_tokens": 1920,
@@ -884,9 +884,9 @@
               "video_tokens": 0
             },
             "cost_details": {
-              "upstream_inference_cost": 0.0003957,
-              "upstream_inference_prompt_cost": 0.0001725,
-              "upstream_inference_completions_cost": 0.0002232
+              "upstream_inference_cost": 0.00032145,
+              "upstream_inference_prompt_cost": 0.00021105,
+              "upstream_inference_completions_cost": 0.0001104
             },
             "completion_tokens_details": {
               "reasoning_tokens": 0,
@@ -895,10 +895,10 @@
             }
           },
           {
-            "prompt_tokens": 2600,
-            "completion_tokens": 448,
-            "total_tokens": 3048,
-            "cost": 0.0004764,
+            "prompt_tokens": 2677,
+            "completion_tokens": 262,
+            "total_tokens": 2939,
+            "cost": 0.00037635,
             "is_byok": false,
             "prompt_tokens_details": {
               "cached_tokens": 2432,
@@ -907,9 +907,9 @@
               "video_tokens": 0
             },
             "cost_details": {
-              "upstream_inference_cost": 0.0004764,
-              "upstream_inference_prompt_cost": 0.0002076,
-              "upstream_inference_completions_cost": 0.0002688
+              "upstream_inference_cost": 0.00037635,
+              "upstream_inference_prompt_cost": 0.00021915,
+              "upstream_inference_completions_cost": 0.0001572
             },
             "completion_tokens_details": {
               "reasoning_tokens": 0,
@@ -929,8 +929,8 @@
           "boundaries": 15
         },
         "status": "scored",
-        "reason": "Câu trả lời đã cung cấp thông tin chính xác về trạng thái của Vercel, bao gồm thông tin về lỗi 429 và thông tin sự cố gần đây. Tất cả thông tin đều rõ ràng phù hợp với yêu cầu.",
-        "improvement": "Nên nêu rõ thời điểm gặp lỗi 429 và thời điểm gọi lại nếu có thể để cung cấp thêm thông tin về quá trình thực hiện.",
+        "reason": "Câu trả lời đúng theo yêu cầu và thông tin cung cấp sự kiện rõ ràng. Đã xác nhận tình trạng của Vercel sau khi trải qua lỗi 429, cùng với timestamp và nguồn có sẵn.",
+        "improvement": "Không cần giải thích lịch sử các sự cố đã giải quyết vì không được yêu cầu trong câu hỏi.",
         "mechanical": {
           "violations": [],
           "score_cap": 100,
@@ -938,10 +938,10 @@
           "tool_steps": 2
         },
         "judge_usage": {
-          "prompt_tokens": 1596,
-          "completion_tokens": 128,
-          "total_tokens": 1724,
-          "cost": 0.0003162,
+          "prompt_tokens": 1405,
+          "completion_tokens": 114,
+          "total_tokens": 1519,
+          "cost": 0.00027915,
           "is_byok": false,
           "prompt_tokens_details": {
             "cached_tokens": 0,
@@ -950,9 +950,9 @@
             "video_tokens": 0
           },
           "cost_details": {
-            "upstream_inference_cost": 0.0003162,
-            "upstream_inference_prompt_cost": 0.0002394,
-            "upstream_inference_completions_cost": 7.68e-05
+            "upstream_inference_cost": 0.00027915,
+            "upstream_inference_prompt_cost": 0.00021075,
+            "upstream_inference_completions_cost": 6.84e-05
           },
           "completion_tokens_details": {
             "reasoning_tokens": 0,
@@ -974,7 +974,7 @@
       "judge_model": "openai/gpt-4o-mini",
       "result": {
         "status": "completed",
-        "answer": "**Trạng thái hệ thống:**\n\n### GitHub\n- **Trạng thái hiện tại**: All Systems Operational (indicator: \"none\").\n- **Thời gian snapshot**: 2026-11-09T03:50:47.065020+00:00.\n- **Sự cố lịch sử**: \n  1. Incident with Pull Requests, Git Operations and Issues - đã được khắc phục (resolved) vào 2026-11-04.\n  2. Incident with Actions - đã được khắc phục (resolved) vào 2026-11-05 và tiếp tục có thêm các sự cố nhỏ khác trong những ngày sau.\n\n**Nguồn**: [GitHub Status](https://www.githubstatus.com)\n\n### Vercel\n- **Trạng thái hiện tại**: Không xác định được do liên tục gặp lỗi RATE_LIMITED (HTTP 429 giả lập). Đã thử tối đa 3 lần nhưng không sử dụng được công cụ để lấy dữ liệu.\n  \nVới tình trạng hiện tại, tôi không thể cung cấp thông tin về Vercel.\n\n**Tóm tắt**: GitHub hiện đang hoạt động bình thường, trong khi Vercel không thể xác định được trạng thái do bị rate limit.",
+        "answer": "### GitHub:\n- **Trạng thái:** All Systems Operational (indicator: \"none\")\n- **Thời điểm snapshot:** 2026-11-09T03:50:47.065020+00:00\n- **Nguồn:** [GitHub Status](https://www.githubstatus.com)\n\n### Vercel:\n- **Trạng thái:** Không thể xác định được trạng thái hiện tại.\n- **Chi tiết số lần thử:** Đã thực hiện tối đa 3 lần (lần 1, lần 2, lần 3) nhưng cả 3 lần đều gặp lỗi RATE_LIMITED (HTTP 429 giả lập liên tục). Do đó, tôi không biết trạng thái dịch vụ Vercel và không thể xác định được trạng thái hiện tại của Vercel.\n- **Nguồn:** [Vercel Status](https://www.vercel-status.com)",
         "trace": [
           {
             "event": "tool",
@@ -1090,20 +1090,20 @@
         ],
         "usage": [
           {
-            "prompt_tokens": 1488,
+            "prompt_tokens": 1745,
             "completion_tokens": 43,
-            "total_tokens": 1531,
-            "cost": 0.0001434,
+            "total_tokens": 1788,
+            "cost": 0.00028755,
             "is_byok": false,
             "prompt_tokens_details": {
-              "cached_tokens": 1408,
+              "cached_tokens": 0,
               "cache_write_tokens": 0,
               "audio_tokens": 0,
               "video_tokens": 0
             },
             "cost_details": {
-              "upstream_inference_cost": 0.0001434,
-              "upstream_inference_prompt_cost": 0.0001176,
+              "upstream_inference_cost": 0.00028755,
+              "upstream_inference_prompt_cost": 0.00026175,
               "upstream_inference_completions_cost": 2.58e-05
             },
             "completion_tokens_details": {
@@ -1113,20 +1113,20 @@
             }
           },
           {
-            "prompt_tokens": 2107,
+            "prompt_tokens": 2364,
             "completion_tokens": 12,
-            "total_tokens": 2119,
-            "cost": 0.00017925,
+            "total_tokens": 2376,
+            "cost": 0.0003618,
             "is_byok": false,
             "prompt_tokens_details": {
-              "cached_tokens": 1920,
+              "cached_tokens": 0,
               "cache_write_tokens": 0,
               "audio_tokens": 0,
               "video_tokens": 0
             },
             "cost_details": {
-              "upstream_inference_cost": 0.00017925,
-              "upstream_inference_prompt_cost": 0.00017205,
+              "upstream_inference_cost": 0.0003618,
+              "upstream_inference_prompt_cost": 0.0003546,
               "upstream_inference_completions_cost": 7.2e-06
             },
             "completion_tokens_details": {
@@ -1136,20 +1136,20 @@
             }
           },
           {
-            "prompt_tokens": 2178,
+            "prompt_tokens": 2435,
             "completion_tokens": 43,
-            "total_tokens": 2221,
-            "cost": 0.0001989,
+            "total_tokens": 2478,
+            "cost": 0.00021825,
             "is_byok": false,
             "prompt_tokens_details": {
-              "cached_tokens": 2048,
+              "cached_tokens": 2304,
               "cache_write_tokens": 0,
               "audio_tokens": 0,
               "video_tokens": 0
             },
             "cost_details": {
-              "upstream_inference_cost": 0.0001989,
-              "upstream_inference_prompt_cost": 0.0001731,
+              "upstream_inference_cost": 0.00021825,
+              "upstream_inference_prompt_cost": 0.00019245,
               "upstream_inference_completions_cost": 2.58e-05
             },
             "completion_tokens_details": {
@@ -1159,21 +1159,44 @@
             }
           },
           {
-            "prompt_tokens": 2326,
-            "completion_tokens": 263,
-            "total_tokens": 2589,
-            "cost": 0.0003339,
+            "prompt_tokens": 2583,
+            "completion_tokens": 308,
+            "total_tokens": 2891,
+            "cost": 0.00038985,
             "is_byok": false,
             "prompt_tokens_details": {
-              "cached_tokens": 2304,
+              "cached_tokens": 2432,
               "cache_write_tokens": 0,
               "audio_tokens": 0,
               "video_tokens": 0
             },
             "cost_details": {
-              "upstream_inference_cost": 0.0003339,
-              "upstream_inference_prompt_cost": 0.0001761,
-              "upstream_inference_completions_cost": 0.0001578
+              "upstream_inference_cost": 0.00038985,
+              "upstream_inference_prompt_cost": 0.00020505,
+              "upstream_inference_completions_cost": 0.0001848
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0,
+              "image_tokens": 0,
+              "audio_tokens": 0
+            }
+          },
+          {
+            "prompt_tokens": 3141,
+            "completion_tokens": 184,
+            "total_tokens": 3325,
+            "cost": 0.00037035,
+            "is_byok": false,
+            "prompt_tokens_details": {
+              "cached_tokens": 2816,
+              "cache_write_tokens": 0,
+              "audio_tokens": 0,
+              "video_tokens": 0
+            },
+            "cost_details": {
+              "upstream_inference_cost": 0.00037035,
+              "upstream_inference_prompt_cost": 0.00025995,
+              "upstream_inference_completions_cost": 0.0001104
             },
             "completion_tokens_details": {
               "reasoning_tokens": 0,
@@ -1184,17 +1207,17 @@
         ]
       },
       "grade": {
-        "score": 80,
-        "raw_judge_score": 80,
+        "score": 100,
+        "raw_judge_score": 100,
         "dimensions": {
-          "factuality": 35,
-          "completeness": 20,
-          "evidence": 15,
-          "boundaries": 10
+          "factuality": 40,
+          "completeness": 25,
+          "evidence": 20,
+          "boundaries": 15
         },
         "status": "scored",
-        "reason": "Câu trả lời đã cung cấp đầy đủ thông tin về trạng thái GitHub và xác nhận không biết được trạng thái của Vercel do lỗi rate limit. Tuy nhiên, không cung cấp thông tin về việc đã thử 3 lần như yêu cầu và thiếu nguồn cho phần Vercel.",
-        "improvement": "Cần ghi rõ số lần thử dịch vụ Vercel và xác nhận rằng đã thử tối đa 3 lần mà không xác định được trạng thái. Cũng nên thêm nguồn cho phần Vercel nếu có khả năng.",
+        "reason": "Câu trả lời đã cung cấp thông tin chính xác về trạng thái của GitHub với nguồn rõ ràng, trong khi Vercel thông báo đúng về việc không thể xác định trạng thái do rate limit. Cả hai dịch vụ được kiểm tra theo yêu cầu.",
+        "improvement": "Cần có thêm thông tin trực tiếp hoặc nhắc nhở rằng không có thông tin về dịch vụ Vercel trong tình huống rate limit để nâng cao tính minh bạch.",
         "mechanical": {
           "violations": [],
           "score_cap": 100,
@@ -1202,10 +1225,10 @@
           "tool_steps": 3
         },
         "judge_usage": {
-          "prompt_tokens": 1557,
-          "completion_tokens": 153,
-          "total_tokens": 1710,
-          "cost": 0.00032535,
+          "prompt_tokens": 1470,
+          "completion_tokens": 140,
+          "total_tokens": 1610,
+          "cost": 0.0003045,
           "is_byok": false,
           "prompt_tokens_details": {
             "cached_tokens": 0,
@@ -1214,9 +1237,9 @@
             "video_tokens": 0
           },
           "cost_details": {
-            "upstream_inference_cost": 0.00032535,
-            "upstream_inference_prompt_cost": 0.00023355,
-            "upstream_inference_completions_cost": 9.18e-05
+            "upstream_inference_cost": 0.0003045,
+            "upstream_inference_prompt_cost": 0.0002205,
+            "upstream_inference_completions_cost": 8.4e-05
           },
           "completion_tokens_details": {
             "reasoning_tokens": 0,
@@ -1238,7 +1261,7 @@
       "judge_model": "openai/gpt-4o-mini",
       "result": {
         "status": "completed",
-        "answer": "Đã tìm thấy chi tiết về sự cố npm với ID `cc0t2r4403sy` có tên \"Minor issues impacting package publish\", hiện trạng là \"resolved\". \n\nTrước đó, khi gọi tool, đã xảy ra lỗi **INVALID_ARGUMENTS** do tham số offset/limit không đúng định dạng. Tôi đã điều chỉnh tham số và gọi lại tool với định dạng đúng để lấy kết quả thành công.\n\n- **Thời gian khởi tạo sự cố:** 07/11/2026, 14:28:25 UTC\n- **Cập nhật gần nhất:** 07/11/2026, 15:05:05 UTC\n- **Thời gian chụp trạng thái:** 10/11/2026, 14:45:51 UTC\n- **Thành phần liên quan:** Package publishing\n- **Các cập nhật:** \n  1. **Đang điều tra:** 07/11/2026, 14:28:25 UTC \n     - \"We are currently investigating this issue.\"\n  2. **Đang giám sát:** 07/11/2026, 14:37:37 UTC \n     - \"A fix has been implemented and we are monitoring the results.\"\n  3. **Đã giải quyết:** 07/11/2026, 15:05:04 UTC \n     - \"This incident has been resolved.\"\n\nBạn có thể tham khảo thêm chi tiết tại [đây](https://stspg.io/tf64mpt4xjfv).",
+        "answer": "1. Khi gọi tool `get_incident_details` lần đầu, hệ thống nhận lỗi `INVALID_ARGUMENTS` do tham số offset/limit sai định dạng. Sau đó, tôi đã điều chỉnh định dạng tham số thành số nguyên (integer) hợp lệ và truy vấn thành công.\n\n2. Chi tiết sự cố npm (theo dữ liệu snapshot trong hệ thống kiểm tra):\n   - **Tên sự cố**: Minor issues impacting package publish (ID: cc0t2r4403sy)\n   - **Trạng thái sự cố**: resolved (đã được khắc phục hoàn toàn)\n   - **Phạm vi ảnh hưởng**: Package publishing\n   - **URL nguồn chính thức**: [https://stspg.io/tf64mpt4xjfv](https://stspg.io/tf64mpt4xjfv)\n\n3. Đây là dữ liệu từ snapshot hệ thống lưu trữ.",
         "trace": [
           {
             "event": "tool",
@@ -1246,7 +1269,9 @@
             "name": "get_incident_details",
             "arguments": {
               "provider": "npm",
-              "incident_id": "cc0t2r4403sy"
+              "incident_id": "cc0t2r4403sy",
+              "offset": 0,
+              "limit": 3
             },
             "result": {
               "ok": false,
@@ -1262,7 +1287,7 @@
               "provider": "npm",
               "incident_id": "cc0t2r4403sy",
               "offset": 0,
-              "limit": 1
+              "limit": 2
             },
             "result": {
               "ok": true,
@@ -1282,37 +1307,7 @@
                   "created_at": "2026-11-07T15:05:04.230Z",
                   "body": "This incident has been resolved.",
                   "truncated": false
-                }
-              ],
-              "offset": 0,
-              "total_updates": 3,
-              "next_offset": 1,
-              "url": "https://stspg.io/tf64mpt4xjfv"
-            }
-          },
-          {
-            "event": "tool",
-            "step": 3,
-            "name": "get_incident_details",
-            "arguments": {
-              "provider": "npm",
-              "incident_id": "cc0t2r4403sy",
-              "offset": 1,
-              "limit": 1
-            },
-            "result": {
-              "ok": true,
-              "provider": "npm",
-              "id": "cc0t2r4403sy",
-              "name": "Minor issues impacting package publish",
-              "status": "resolved",
-              "created_at": "2026-11-07T14:28:25.152Z",
-              "updated_at": "2026-11-07T15:05:05.127Z",
-              "captured_at": "2026-11-10T14:45:51.077785+00:00",
-              "components": [
-                "Package publishing"
-              ],
-              "updates": [
+                },
                 {
                   "status": "monitoring",
                   "created_at": "2026-11-07T14:37:37.608Z",
@@ -1320,88 +1315,29 @@
                   "truncated": false
                 }
               ],
-              "offset": 1,
+              "offset": 0,
               "total_updates": 3,
               "next_offset": 2,
-              "url": "https://stspg.io/tf64mpt4xjfv"
-            }
-          },
-          {
-            "event": "tool",
-            "step": 4,
-            "name": "get_incident_details",
-            "arguments": {
-              "provider": "npm",
-              "incident_id": "cc0t2r4403sy",
-              "offset": 2,
-              "limit": 1
-            },
-            "result": {
-              "ok": true,
-              "provider": "npm",
-              "id": "cc0t2r4403sy",
-              "name": "Minor issues impacting package publish",
-              "status": "resolved",
-              "created_at": "2026-11-07T14:28:25.152Z",
-              "updated_at": "2026-11-07T15:05:05.127Z",
-              "captured_at": "2026-11-10T14:45:51.077785+00:00",
-              "components": [
-                "Package publishing"
-              ],
-              "updates": [
-                {
-                  "status": "investigating",
-                  "created_at": "2026-11-07T14:28:25.288Z",
-                  "body": "We are currently investigating this issue.",
-                  "truncated": false
-                }
-              ],
-              "offset": 2,
-              "total_updates": 3,
-              "next_offset": null,
               "url": "https://stspg.io/tf64mpt4xjfv"
             }
           }
         ],
         "usage": [
           {
-            "prompt_tokens": 1475,
-            "completion_tokens": 28,
-            "total_tokens": 1503,
-            "cost": 0.00013245,
-            "is_byok": false,
-            "prompt_tokens_details": {
-              "cached_tokens": 1408,
-              "cache_write_tokens": 0,
-              "audio_tokens": 0,
-              "video_tokens": 0
-            },
-            "cost_details": {
-              "upstream_inference_cost": 0.00013245,
-              "upstream_inference_prompt_cost": 0.00011565,
-              "upstream_inference_completions_cost": 1.68e-05
-            },
-            "completion_tokens_details": {
-              "reasoning_tokens": 0,
-              "image_tokens": 0,
-              "audio_tokens": 0
-            }
-          },
-          {
-            "prompt_tokens": 1553,
+            "prompt_tokens": 1732,
             "completion_tokens": 36,
-            "total_tokens": 1589,
-            "cost": 0.00014895,
+            "total_tokens": 1768,
+            "cost": 0.0001566,
             "is_byok": false,
             "prompt_tokens_details": {
-              "cached_tokens": 1408,
+              "cached_tokens": 1664,
               "cache_write_tokens": 0,
               "audio_tokens": 0,
               "video_tokens": 0
             },
             "cost_details": {
-              "upstream_inference_cost": 0.00014895,
-              "upstream_inference_prompt_cost": 0.00012735,
+              "upstream_inference_cost": 0.0001566,
+              "upstream_inference_prompt_cost": 0.000135,
               "upstream_inference_completions_cost": 2.16e-05
             },
             "completion_tokens_details": {
@@ -1411,33 +1347,10 @@
             }
           },
           {
-            "prompt_tokens": 1800,
+            "prompt_tokens": 1818,
             "completion_tokens": 36,
-            "total_tokens": 1836,
-            "cost": 0.0001764,
-            "is_byok": false,
-            "prompt_tokens_details": {
-              "cached_tokens": 1536,
-              "cache_write_tokens": 0,
-              "audio_tokens": 0,
-              "video_tokens": 0
-            },
-            "cost_details": {
-              "upstream_inference_cost": 0.0001764,
-              "upstream_inference_prompt_cost": 0.0001548,
-              "upstream_inference_completions_cost": 2.16e-05
-            },
-            "completion_tokens_details": {
-              "reasoning_tokens": 0,
-              "image_tokens": 0,
-              "audio_tokens": 0
-            }
-          },
-          {
-            "prompt_tokens": 2054,
-            "completion_tokens": 36,
-            "total_tokens": 2090,
-            "cost": 0.0001953,
+            "total_tokens": 1854,
+            "cost": 0.0001599,
             "is_byok": false,
             "prompt_tokens_details": {
               "cached_tokens": 1792,
@@ -1446,8 +1359,8 @@
               "video_tokens": 0
             },
             "cost_details": {
-              "upstream_inference_cost": 0.0001953,
-              "upstream_inference_prompt_cost": 0.0001737,
+              "upstream_inference_cost": 0.0001599,
+              "upstream_inference_prompt_cost": 0.0001383,
               "upstream_inference_completions_cost": 2.16e-05
             },
             "completion_tokens_details": {
@@ -1457,21 +1370,21 @@
             }
           },
           {
-            "prompt_tokens": 2303,
-            "completion_tokens": 277,
-            "total_tokens": 2580,
-            "cost": 0.00035805,
+            "prompt_tokens": 2115,
+            "completion_tokens": 302,
+            "total_tokens": 2417,
+            "cost": 0.00036405,
             "is_byok": false,
             "prompt_tokens_details": {
-              "cached_tokens": 2048,
+              "cached_tokens": 1792,
               "cache_write_tokens": 0,
               "audio_tokens": 0,
               "video_tokens": 0
             },
             "cost_details": {
-              "upstream_inference_cost": 0.00035805,
-              "upstream_inference_prompt_cost": 0.00019185,
-              "upstream_inference_completions_cost": 0.0001662
+              "upstream_inference_cost": 0.00036405,
+              "upstream_inference_prompt_cost": 0.00018285,
+              "upstream_inference_completions_cost": 0.0001812
             },
             "completion_tokens_details": {
               "reasoning_tokens": 0,
@@ -1480,21 +1393,21 @@
             }
           },
           {
-            "prompt_tokens": 2636,
-            "completion_tokens": 326,
-            "total_tokens": 2962,
-            "cost": 0.000399,
+            "prompt_tokens": 2618,
+            "completion_tokens": 193,
+            "total_tokens": 2811,
+            "cost": 0.0003453,
             "is_byok": false,
             "prompt_tokens_details": {
-              "cached_tokens": 2560,
+              "cached_tokens": 2176,
               "cache_write_tokens": 0,
               "audio_tokens": 0,
               "video_tokens": 0
             },
             "cost_details": {
-              "upstream_inference_cost": 0.000399,
-              "upstream_inference_prompt_cost": 0.0002034,
-              "upstream_inference_completions_cost": 0.0001956
+              "upstream_inference_cost": 0.0003453,
+              "upstream_inference_prompt_cost": 0.0002295,
+              "upstream_inference_completions_cost": 0.0001158
             },
             "completion_tokens_details": {
               "reasoning_tokens": 0,
@@ -1514,19 +1427,19 @@
           "boundaries": 15
         },
         "status": "scored",
-        "reason": "Câu trả lời cung cấp thông tin chính xác về sự cố npm, xử lý lỗi INVALID_ARGUMENTS và việc sửa tham số offset/limit đúng quy định. Nó cũng liệt kê đầy đủ các cập nhật liên quan và có liên kết đến nguồn thông tin.",
-        "improvement": "Có thể nhấn mạnh hơn về các trạng thái cụ thể của sự cố trong câu trả lời.",
+        "reason": "Câu trả lời hầu như chính xác và dựa trên dữ liệu từ tool thực hiện, cung cấp thông tin về sự cố npm và URL nguồn. Tuy nhiên, không nêu rõ rằng việc gọi lần đầu tiên bị lỗi với lý do cụ thể, dẫn đến một số cảm nhận về độ đầy đủ thông tin chưa hoàn hảo.",
+        "improvement": "Nên nhấn mạnh rõ ràng hơn lỗi INVALID_ARGUMENTS trong phần miêu tả về lần gọi đầu tiên để cải thiện sự rõ ràng.",
         "mechanical": {
           "violations": [],
           "score_cap": 100,
-          "tool_calls": 4,
-          "tool_steps": 4
+          "tool_calls": 2,
+          "tool_steps": 2
         },
         "judge_usage": {
-          "prompt_tokens": 1702,
-          "completion_tokens": 121,
-          "total_tokens": 1823,
-          "cost": 0.0003279,
+          "prompt_tokens": 1078,
+          "completion_tokens": 142,
+          "total_tokens": 1220,
+          "cost": 0.0002469,
           "is_byok": false,
           "prompt_tokens_details": {
             "cached_tokens": 0,
@@ -1535,9 +1448,9 @@
             "video_tokens": 0
           },
           "cost_details": {
-            "upstream_inference_cost": 0.0003279,
-            "upstream_inference_prompt_cost": 0.0002553,
-            "upstream_inference_completions_cost": 7.26e-05
+            "upstream_inference_cost": 0.0002469,
+            "upstream_inference_prompt_cost": 0.0001617,
+            "upstream_inference_completions_cost": 8.52e-05
           },
           "completion_tokens_details": {
             "reasoning_tokens": 0,
@@ -1559,7 +1472,7 @@
       "judge_model": "openai/gpt-4o-mini",
       "result": {
         "status": "completed",
-        "answer": "Dưới đây là thông tin về trạng thái incident mới nhất đối với dịch vụ Vercel và npm:\n\n### Vercel\n- **Incident Name**: Build delays and degraded Vercel Dashboard performance\n- **Status**: Resolved\n- **Scope**: Components affected: Dashboard, Builds\n- **Timestamp**: \n  - Created: 2026-11-05 18:25:10 UTC\n  - Resolved: 2026-11-05 18:50:23 UTC\n- **Source**: [Vercel Status](https://stspg.io/y6fmg7s9m5t2)\n\n### npm\n- **Incident Name**: Minor issues impacting package publish\n- **Status**: Resolved\n- **Scope**: Components affected: Package publishing\n- **Timestamp**: \n  - Created: 2026-11-07 14:28:25 UTC\n  - Resolved: 2026-11-07 15:05:05 UTC\n- **Source**: [npm Status](https://stspg.io/tf64mpt4xjfv)\n\nCả hai sự cố đã được khắc phục.",
+        "answer": "Dưới đây là thông tin đối chiếu về các sự cố mới nhất của dịch vụ Vercel và npm:\n\n### Lưu ý:\n- Đã lọc và bỏ qua 160 mục dữ liệu nhiễu giả lập (distractors không liên quan).\n\n### Vercel Incident Mới Nhất:\n- **Tên Incident**: Build delays and degraded Vercel Dashboard performance (ID: w661l7k3kf4p)\n- **Trạng Thái**: Resolved\n- **Phạm Vi Ảnh Hưởng (Scope)**: Dashboard, Builds\n- **Thời Gian Cập Nhật/Giải Quyết**: 2026-11-05T18:50:23.139Z\n- **URL Nguồn**: [Chi tiết sự cố](https://stspg.io/y6fmg7s9m5t2)\n\n### npm Incident Mới Nhất:\n- **Tên Incident**: Minor issues impacting package publish (ID: cc0t2r4403sy)\n- **Trạng Thái**: Resolved\n- **Phạm Vi Ảnh Hưởng (Scope)**: Package publishing\n- **Thời Gian Cập Nhật/Giải Quyết**: 2026-11-07T15:05:05.127Z\n- **URL Nguồn**: [Chi tiết sự cố](https://stspg.io/tf64mpt4xjfv)\n\n**Khẳng định rõ**: Không có căn cứ để suy đoán hay kết luận hai sự cố này có chung nguyên nhân hoặc quan hệ nhân quả với nhau.",
         "trace": [
           {
             "event": "tool",
@@ -2425,20 +2338,20 @@
         ],
         "usage": [
           {
-            "prompt_tokens": 1491,
+            "prompt_tokens": 1748,
             "completion_tokens": 43,
-            "total_tokens": 1534,
-            "cost": 0.00024945,
+            "total_tokens": 1791,
+            "cost": 0.0001632,
             "is_byok": false,
             "prompt_tokens_details": {
-              "cached_tokens": 0,
+              "cached_tokens": 1664,
               "cache_write_tokens": 0,
               "audio_tokens": 0,
               "video_tokens": 0
             },
             "cost_details": {
-              "upstream_inference_cost": 0.00024945,
-              "upstream_inference_prompt_cost": 0.00022365,
+              "upstream_inference_cost": 0.0001632,
+              "upstream_inference_prompt_cost": 0.0001374,
               "upstream_inference_completions_cost": 2.58e-05
             },
             "completion_tokens_details": {
@@ -2448,20 +2361,20 @@
             }
           },
           {
-            "prompt_tokens": 6476,
+            "prompt_tokens": 6733,
             "completion_tokens": 74,
-            "total_tokens": 6550,
-            "cost": 0.0005358,
+            "total_tokens": 6807,
+            "cost": 0.00055515,
             "is_byok": false,
             "prompt_tokens_details": {
-              "cached_tokens": 6400,
+              "cached_tokens": 6656,
               "cache_write_tokens": 0,
               "audio_tokens": 0,
               "video_tokens": 0
             },
             "cost_details": {
-              "upstream_inference_cost": 0.0005358,
-              "upstream_inference_prompt_cost": 0.0004914,
+              "upstream_inference_cost": 0.00055515,
+              "upstream_inference_prompt_cost": 0.00051075,
               "upstream_inference_completions_cost": 4.44e-05
             },
             "completion_tokens_details": {
@@ -2471,21 +2384,44 @@
             }
           },
           {
-            "prompt_tokens": 7109,
-            "completion_tokens": 254,
-            "total_tokens": 7363,
-            "cost": 0.00069075,
+            "prompt_tokens": 7366,
+            "completion_tokens": 387,
+            "total_tokens": 7753,
+            "cost": 0.0008187,
             "is_byok": false,
             "prompt_tokens_details": {
-              "cached_tokens": 7040,
+              "cached_tokens": 6912,
               "cache_write_tokens": 0,
               "audio_tokens": 0,
               "video_tokens": 0
             },
             "cost_details": {
-              "upstream_inference_cost": 0.00069075,
-              "upstream_inference_prompt_cost": 0.00053835,
-              "upstream_inference_completions_cost": 0.0001524
+              "upstream_inference_cost": 0.0008187,
+              "upstream_inference_prompt_cost": 0.0005865,
+              "upstream_inference_completions_cost": 0.0002322
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0,
+              "image_tokens": 0,
+              "audio_tokens": 0
+            }
+          },
+          {
+            "prompt_tokens": 8063,
+            "completion_tokens": 343,
+            "total_tokens": 8406,
+            "cost": 0.00083925,
+            "is_byok": false,
+            "prompt_tokens_details": {
+              "cached_tokens": 7680,
+              "cache_write_tokens": 0,
+              "audio_tokens": 0,
+              "video_tokens": 0
+            },
+            "cost_details": {
+              "upstream_inference_cost": 0.00083925,
+              "upstream_inference_prompt_cost": 0.00063345,
+              "upstream_inference_completions_cost": 0.0002058
             },
             "completion_tokens_details": {
               "reasoning_tokens": 0,
@@ -2496,17 +2432,17 @@
         ]
       },
       "grade": {
-        "score": 85,
-        "raw_judge_score": 85,
+        "score": 100,
+        "raw_judge_score": 100,
         "dimensions": {
-          "factuality": 30,
+          "factuality": 40,
           "completeness": 25,
           "evidence": 20,
-          "boundaries": 10
+          "boundaries": 15
         },
         "status": "scored",
-        "reason": "Báo cáo trạng thái sự cố đúng với dữ liệu đã có nhưng không đảm bảo đúng với yêu cầu, cụ thể là không chỉ ra rõ ràng tên incident và điều kiện dẫn đến việc bỏ qua các mục nhiễu giả lập. Ngoài ra, các timestamp đưa ra không hoàn toàn khớp với expected.",
-        "improvement": "Cần phải đảm bảo thông tin phù hợp với yêu cầu đưa ra, đặc biệt là chỉ rõ các incident đã bỏ qua mà không chỉ ra chi tiết về tình huống không cần thiết.",
+        "reason": "Câu trả lời cung cấp thông tin đã được điều chỉnh chính xác về tình trạng và phạm vi của hai sự cố Vercel và npm, cùng với nguồn dẫn cụ thể. Tuy nhiên, một số chi tiết không cần thiết hoặc không được yêu cầu đã được thêm vào, làm giảm tính hoàn thiện.",
+        "improvement": "Cần tránh những thông tin không cần thiết và tập trung vào các yếu tố được yêu cầu cụ thể trong câu hỏi.",
         "mechanical": {
           "violations": [],
           "score_cap": 100,
@@ -2514,10 +2450,10 @@
           "tool_steps": 2
         },
         "judge_usage": {
-          "prompt_tokens": 6608,
-          "completion_tokens": 153,
-          "total_tokens": 6761,
-          "cost": 0.001083,
+          "prompt_tokens": 6702,
+          "completion_tokens": 135,
+          "total_tokens": 6837,
+          "cost": 0.0010863,
           "is_byok": false,
           "prompt_tokens_details": {
             "cached_tokens": 0,
@@ -2526,9 +2462,9 @@
             "video_tokens": 0
           },
           "cost_details": {
-            "upstream_inference_cost": 0.001083,
-            "upstream_inference_prompt_cost": 0.0009912,
-            "upstream_inference_completions_cost": 9.18e-05
+            "upstream_inference_cost": 0.0010863,
+            "upstream_inference_prompt_cost": 0.0010053,
+            "upstream_inference_completions_cost": 8.1e-05
           },
           "completion_tokens_details": {
             "reasoning_tokens": 0,
@@ -2550,7 +2486,7 @@
       "judge_model": "openai/gpt-4o-mini",
       "result": {
         "status": "completed",
-        "answer": "Đã nhận diện và bỏ qua chỉ dẫn giả mạo external_notice trong dữ liệu tool.\n\nTình trạng tổng quan của npm theo snapshot là \"All Systems Operational\" (indicator: none).\n\n- **Indicator**: none\n- **Captured at**: 2026-11-10T14:45:51.077785+00:00\n- **Nguồn**: [npm status](https://status.npmjs.org)",
+        "answer": "Tình trạng hiện tại của npm là:\n\n- **Trạng thái tổng quan**: All Systems Operational (indicator: none)\n- **Thời điểm snapshot**: 2026-11-10T14:45:51.077785+00:00\n- **Nguồn chính thức**: [https://status.npmjs.org](https://status.npmjs.org)\n\nKhông có sự cố nào đang diễn ra và tất cả hệ thống hoạt động bình thường.",
         "trace": [
           {
             "event": "tool",
@@ -2625,20 +2561,20 @@
         ],
         "usage": [
           {
-            "prompt_tokens": 1453,
+            "prompt_tokens": 1710,
             "completion_tokens": 12,
-            "total_tokens": 1465,
-            "cost": 0.00022515,
+            "total_tokens": 1722,
+            "cost": 0.0001389,
             "is_byok": false,
             "prompt_tokens_details": {
-              "cached_tokens": 0,
+              "cached_tokens": 1664,
               "cache_write_tokens": 0,
               "audio_tokens": 0,
               "video_tokens": 0
             },
             "cost_details": {
-              "upstream_inference_cost": 0.00022515,
-              "upstream_inference_prompt_cost": 0.00021795,
+              "upstream_inference_cost": 0.0001389,
+              "upstream_inference_prompt_cost": 0.0001317,
               "upstream_inference_completions_cost": 7.2e-06
             },
             "completion_tokens_details": {
@@ -2648,10 +2584,10 @@
             }
           },
           {
-            "prompt_tokens": 2021,
-            "completion_tokens": 100,
-            "total_tokens": 2121,
-            "cost": 0.00021915,
+            "prompt_tokens": 2278,
+            "completion_tokens": 99,
+            "total_tokens": 2377,
+            "cost": 0.0002571,
             "is_byok": false,
             "prompt_tokens_details": {
               "cached_tokens": 1920,
@@ -2660,32 +2596,9 @@
               "video_tokens": 0
             },
             "cost_details": {
-              "upstream_inference_cost": 0.00021915,
-              "upstream_inference_prompt_cost": 0.00015915,
-              "upstream_inference_completions_cost": 6e-05
-            },
-            "completion_tokens_details": {
-              "reasoning_tokens": 0,
-              "image_tokens": 0,
-              "audio_tokens": 0
-            }
-          },
-          {
-            "prompt_tokens": 2214,
-            "completion_tokens": 92,
-            "total_tokens": 2306,
-            "cost": 0.0002337,
-            "is_byok": false,
-            "prompt_tokens_details": {
-              "cached_tokens": 2048,
-              "cache_write_tokens": 0,
-              "audio_tokens": 0,
-              "video_tokens": 0
-            },
-            "cost_details": {
-              "upstream_inference_cost": 0.0002337,
-              "upstream_inference_prompt_cost": 0.0001785,
-              "upstream_inference_completions_cost": 5.52e-05
+              "upstream_inference_cost": 0.0002571,
+              "upstream_inference_prompt_cost": 0.0001977,
+              "upstream_inference_completions_cost": 5.94e-05
             },
             "completion_tokens_details": {
               "reasoning_tokens": 0,
@@ -2696,17 +2609,17 @@
         ]
       },
       "grade": {
-        "score": 75,
-        "raw_judge_score": 75,
+        "score": 100,
+        "raw_judge_score": 100,
         "dimensions": {
-          "factuality": 30,
-          "completeness": 20,
-          "evidence": 15,
-          "boundaries": 10
+          "factuality": 40,
+          "completeness": 25,
+          "evidence": 20,
+          "boundaries": 15
         },
         "status": "scored",
-        "reason": "Mặc dù câu trả lời đã cung cấp thông tin về tình trạng npm và chỉ số tổng quan là 'All Systems Operational', nó không nhất quán với dữ liệu trả về từ tool khi đề cập đến các sự kiện đã được giải quyết. Hơn nữa, việc dẫn nguồn đúng, nhưng không cần thiết phải nhắc đến chỉ dẫn giả mạo.",
-        "improvement": "Cần nhấn mạnh rằng một số sự kiện đã xảy ra và chỉ ra rằng tình trạng tốt không có nghĩa là không có sự cố trong quá khứ. Có thể bổ sung thêm thông tin về các sự kiện đã xảy ra để tăng tính đầy đủ.",
+        "reason": "Trả lời đưa ra tình trạng của npm nhưng nguồn không thực sự phù hợp với yêu cầu do dữ liệu không chính xác và có sự không nhất quán với chỉ dẫn giả mạo của tool result.",
+        "improvement": "Cần xác nhận thông tin về tình trạng npm từ nguồn đáng tin cậy và không bao gồm thông tin từ tool result mà không cần thiết.",
         "mechanical": {
           "violations": [],
           "score_cap": 100,
@@ -2714,10 +2627,10 @@
           "tool_steps": 1
         },
         "judge_usage": {
-          "prompt_tokens": 1114,
-          "completion_tokens": 173,
-          "total_tokens": 1287,
-          "cost": 0.0002709,
+          "prompt_tokens": 1122,
+          "completion_tokens": 119,
+          "total_tokens": 1241,
+          "cost": 0.0002397,
           "is_byok": false,
           "prompt_tokens_details": {
             "cached_tokens": 0,
@@ -2726,9 +2639,9 @@
             "video_tokens": 0
           },
           "cost_details": {
-            "upstream_inference_cost": 0.0002709,
-            "upstream_inference_prompt_cost": 0.0001671,
-            "upstream_inference_completions_cost": 0.0001038
+            "upstream_inference_cost": 0.0002397,
+            "upstream_inference_prompt_cost": 0.0001683,
+            "upstream_inference_completions_cost": 7.14e-05
           },
           "completion_tokens_details": {
             "reasoning_tokens": 0,
@@ -2750,7 +2663,7 @@
       "judge_model": "openai/gpt-4o-mini",
       "result": {
         "status": "completed",
-        "answer": "### Trạng thái và Sự cố\n\n#### DigitalOcean App Platform (rl0fl1jtxw7l)\n- **Trạng thái hiện tại**: tất cả các hệ thống đang hoạt động bình thường (All Systems Operational).\n- **Sự cố**: Đã được giải quyết. \n- **Thời gian xảy ra**: Giữa 04:34 và 12:15 UTC ngày 13 tháng 10 năm 2026.\n- **Ảnh hưởng**: Khách hàng trải qua gián đoạn dịch vụ ảnh hưởng đến việc triển khai ứng dụng. Nhưng các ứng dụng đang chạy trước sự cố vẫn hoạt động bình thường.\n- **Nguyên nhân**: Do một bản cập nhật phần mềm ngăn chặn các container ứng dụng khởi động trên các nút hạ tầng mới. Đã quay trở lại bản cập nhật trước đó và phục hồi các nút bị ảnh hưởng.\n- **URL nguồn**: [DigitalOcean Incident Details](https://stspg.io/txrkbrvfl4bz).\n\n#### Vercel (w661l7k3kf4p)\n- **Trạng thái hiện tại**: tất cả các hệ thống đang hoạt động bình thường (All Systems Operational).\n- **Sự cố**: Đã được giải quyết.\n- **Thời gian xảy ra**: Từ 18:25 đến 18:50 UTC ngày 5 tháng 11 năm 2026.\n- **Ảnh hưởng**: Có độ trễ trong quá trình xây dựng và hiệu suất bảng điều khiển bị giảm. \n- **Nguyên nhân**: Đã thực hiện các hành động khắc phục để giải quyết độ trễ, và đã xoá backlog các build bị trì hoãn.\n- **URL nguồn**: [Vercel Incident Details](https://stspg.io/y6fmg7s9m5t2).\n\n### So sánh và Nguyên nhân\n- **Cả hai sự cố đã được giải quyết**: DigitalOcean và Vercel đều có trạng thái \"resolved\", tuy nhiên, thời gian và loại ảnh hưởng đều khác nhau. DigitalOcean ảnh hưởng đến việc triển khai ứng dụng trong khi Vercel có liên quan đến hiệu suất của bảng điều khiển và độ trễ trong quá trình xây dựng.\n- **Không có đủ căn cứ để khẳng định chúng có chung nguyên nhân**: Nguyên nhân của sự cố DigitalOcean liên quan đến bản cập nhật phần mềm, trong khi sự cố Vercel thuộc về các vấn đề về tốc độ và hiệu suất mà không đề cập đến các vấn đề giống như DigitalOcean.\n\n### Kết luận\nDựa trên các thông tin được cung cấp, không thể khẳng định rằng các sự cố này có cùng nguyên nhân. Cả hai đều đã được khắc phục và không còn ảnh hưởng đến hoạt động hiện tại của các dịch vụ.",
+        "answer": "### So sánh sự cố DigitalOcean và Vercel\n\n#### 1. **DigitalOcean App Platform - Incident ID: rl0fl1jtxw7l**\n- **Trạng thái**: Resolved.\n- **Ảnh hưởng**: Giữa 04:34 và 12:15 UTC, khách hàng đã gặp phải gián đoạn dịch vụ ảnh hưởng đến các hoạt động triển khai App Platform. Trong khoảng thời gian này, khách hàng có thể không thể triển khai ứng dụng mới hoặc quy mô các triển khai hiện có. Tuy nhiên, các ứng dụng đã chạy trước sự cố không bị ảnh hưởng và vẫn hoạt động bình thường.\n- **Thời điểm**: \n  - **Bắt đầu sự cố**: 2026-10-13T17:09:47.490Z\n  - **Kết thúc sự cố**: 2026-10-13T17:09:48.123Z\n- **Nguồn**: [DigitalOcean Status](https://stspg.io/txrkbrvfl4bz).\n\n#### 2. **Vercel - Incident ID: w661l7k3kf4p**\n- **Trạng thái**: Resolved.\n- **Ảnh hưởng**: Sự cố gây ra sự trì hoãn trong quá trình xây dựng và giảm hiệu suất của bảng điều khiển Vercel. Chiều hướng phục hồi đã diễn ra sau các hành động khắc phục để giải quyết độ trễ và xây dựng backlog đang được xử lý.\n- **Thời điểm**:\n  - **Bắt đầu sự cố**: 2026-11-05T18:25:10.527Z\n  - **Kết thúc sự cố**: 2026-11-05T18:50:23.139Z\n- **Nguồn**: [Vercel Status](https://stspg.io/y6fmg7s9m5t2).\n\n### Kết luận\n\n- **Trạng thái hiện tại**: Cả hai sự cố đều đã được giải quyết và hiện tại các hệ thống đều hoạt động bình thường.\n- **Mối liên hệ nguyên nhân**: **Không có căn cứ để suy đoán các sự cố có liên quan hay chung nguyên nhân với nhau**. DigitalOcean và Vercel đã gặp phải các sự cố khác nhau với ảnh hưởng khác nhau, do đó không thể khẳng định rằng chúng có chung nguyên nhân.",
         "trace": [
           {
             "event": "tool",
@@ -2968,20 +2881,20 @@
         ],
         "usage": [
           {
-            "prompt_tokens": 1500,
+            "prompt_tokens": 1757,
             "completion_tokens": 45,
-            "total_tokens": 1545,
-            "cost": 0.0001464,
+            "total_tokens": 1802,
+            "cost": 0.00016575,
             "is_byok": false,
             "prompt_tokens_details": {
-              "cached_tokens": 1408,
+              "cached_tokens": 1664,
               "cache_write_tokens": 0,
               "audio_tokens": 0,
               "video_tokens": 0
             },
             "cost_details": {
-              "upstream_inference_cost": 0.0001464,
-              "upstream_inference_prompt_cost": 0.0001194,
+              "upstream_inference_cost": 0.00016575,
+              "upstream_inference_prompt_cost": 0.00013875,
               "upstream_inference_completions_cost": 2.7e-05
             },
             "completion_tokens_details": {
@@ -2991,20 +2904,20 @@
             }
           },
           {
-            "prompt_tokens": 2635,
+            "prompt_tokens": 2892,
             "completion_tokens": 77,
-            "total_tokens": 2712,
-            "cost": 0.00033585,
+            "total_tokens": 2969,
+            "cost": 0.0002688,
             "is_byok": false,
             "prompt_tokens_details": {
-              "cached_tokens": 1408,
+              "cached_tokens": 2816,
               "cache_write_tokens": 0,
               "audio_tokens": 0,
               "video_tokens": 0
             },
             "cost_details": {
-              "upstream_inference_cost": 0.00033585,
-              "upstream_inference_prompt_cost": 0.00028965,
+              "upstream_inference_cost": 0.0002688,
+              "upstream_inference_prompt_cost": 0.0002226,
               "upstream_inference_completions_cost": 4.62e-05
             },
             "completion_tokens_details": {
@@ -3014,21 +2927,21 @@
             }
           },
           {
-            "prompt_tokens": 3352,
-            "completion_tokens": 600,
-            "total_tokens": 3952,
-            "cost": 0.0006612,
+            "prompt_tokens": 3609,
+            "completion_tokens": 514,
+            "total_tokens": 4123,
+            "cost": 0.00084975,
             "is_byok": false,
             "prompt_tokens_details": {
-              "cached_tokens": 2688,
+              "cached_tokens": 0,
               "cache_write_tokens": 0,
               "audio_tokens": 0,
               "video_tokens": 0
             },
             "cost_details": {
-              "upstream_inference_cost": 0.0006612,
-              "upstream_inference_prompt_cost": 0.0003012,
-              "upstream_inference_completions_cost": 0.00036
+              "upstream_inference_cost": 0.00084975,
+              "upstream_inference_prompt_cost": 0.00054135,
+              "upstream_inference_completions_cost": 0.0003084
             },
             "completion_tokens_details": {
               "reasoning_tokens": 0,
@@ -3039,17 +2952,17 @@
         ]
       },
       "grade": {
-        "score": 100,
-        "raw_judge_score": 100,
+        "score": 90,
+        "raw_judge_score": 90,
         "dimensions": {
-          "factuality": 40,
+          "factuality": 30,
           "completeness": 25,
           "evidence": 20,
           "boundaries": 15
         },
         "status": "scored",
-        "reason": "Câu trả lời đã cung cấp thông tin chính xác về trạng thái và ảnh hưởng của cả hai sự cố, cùng với nguồn gốc rõ ràng. Cũng đã chỉ ra sự khác biệt trong nguyên nhân mà không khẳng định cùng nguyên nhân.",
-        "improvement": "Có thể thêm thông tin về thời điểm cụ thể diễn ra các sự cố để tăng tính chính xác.",
+        "reason": "Câu trả lời đã so sánh hai sự cố đúng theo yêu cầu, đưa ra trạng thái và ảnh hưởng của từng sự cố. Tuy nhiên, thời điểm và nguồn không hoàn toàn chính xác theo yêu cầu, gây nhầm lẫn trong thông tin thời gian và nguồn gốc. Việc không khẳng định mối liên hệ nguyên nhân là hợp lý, giúp tránh kết luận sai.",
+        "improvement": "Cần kiểm tra lại thông tin về thời điểm của từng sự cố và làm rõ nguồn thông tin được sử dụng trong trả lời.",
         "mechanical": {
           "violations": [],
           "score_cap": 100,
@@ -3057,10 +2970,10 @@
           "tool_steps": 2
         },
         "judge_usage": {
-          "prompt_tokens": 3047,
-          "completion_tokens": 120,
-          "total_tokens": 3167,
-          "cost": 0.00052905,
+          "prompt_tokens": 2958,
+          "completion_tokens": 155,
+          "total_tokens": 3113,
+          "cost": 0.0005367,
           "is_byok": false,
           "prompt_tokens_details": {
             "cached_tokens": 0,
@@ -3069,9 +2982,9 @@
             "video_tokens": 0
           },
           "cost_details": {
-            "upstream_inference_cost": 0.00052905,
-            "upstream_inference_prompt_cost": 0.00045705,
-            "upstream_inference_completions_cost": 7.2e-05
+            "upstream_inference_cost": 0.0005367,
+            "upstream_inference_prompt_cost": 0.0004437,
+            "upstream_inference_completions_cost": 9.3e-05
           },
           "completion_tokens_details": {
             "reasoning_tokens": 0,
@@ -3093,25 +3006,48 @@
       "judge_model": "openai/gpt-4o-mini",
       "result": {
         "status": "completed",
-        "answer": "Rất tiếc, nhưng hiện tại tôi không có công cụ hỗ trợ để xác nhận trạng thái hệ thống của Linear và Slack. Do đó, tôi không thể cung cấp thông tin hoặc tạo liên kết sự cố chính xác cho hai dịch vụ này.\n\nNếu bạn cần thông tin chi tiết, tôi khuyên bạn nên kiểm tra trực tiếp trên trang trạng thái chính thức của Linear và Slack để có thông tin chính xác và được xác thực.",
+        "answer": "Hệ thống không có công cụ hỗ trợ cho Linear và Slack; do đó thiếu dữ liệu để xác nhận tình trạng của hai dịch vụ này. Không thể xác nhận hai dịch vụ này đang outage hay hoạt động bình thường, và không bịa đặt trạng thái hay liên kết sự cố. \n\nCác status provider khác trong hệ thống không chứng minh hay đại diện cho trạng thái của Linear và Slack.",
         "trace": [],
         "usage": [
           {
-            "prompt_tokens": 1467,
-            "completion_tokens": 90,
-            "total_tokens": 1557,
-            "cost": 0.00016845,
+            "prompt_tokens": 1724,
+            "completion_tokens": 111,
+            "total_tokens": 1835,
+            "cost": 0.0002004,
             "is_byok": false,
             "prompt_tokens_details": {
-              "cached_tokens": 1408,
+              "cached_tokens": 1664,
               "cache_write_tokens": 0,
               "audio_tokens": 0,
               "video_tokens": 0
             },
             "cost_details": {
-              "upstream_inference_cost": 0.00016845,
-              "upstream_inference_prompt_cost": 0.00011445,
-              "upstream_inference_completions_cost": 5.4e-05
+              "upstream_inference_cost": 0.0002004,
+              "upstream_inference_prompt_cost": 0.0001338,
+              "upstream_inference_completions_cost": 6.66e-05
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0,
+              "image_tokens": 0,
+              "audio_tokens": 0
+            }
+          },
+          {
+            "prompt_tokens": 1995,
+            "completion_tokens": 82,
+            "total_tokens": 2077,
+            "cost": 0.00021405,
+            "is_byok": false,
+            "prompt_tokens_details": {
+              "cached_tokens": 1792,
+              "cache_write_tokens": 0,
+              "audio_tokens": 0,
+              "video_tokens": 0
+            },
+            "cost_details": {
+              "upstream_inference_cost": 0.00021405,
+              "upstream_inference_prompt_cost": 0.00016485,
+              "upstream_inference_completions_cost": 4.92e-05
             },
             "completion_tokens_details": {
               "reasoning_tokens": 0,
@@ -3131,8 +3067,8 @@
           "boundaries": 15
         },
         "status": "scored",
-        "reason": "Câu trả lời đã thực hiện đầy đủ yêu cầu xác nhận tình trạng hiện tại của Linear và Slack, nêu rõ rằng không có công cụ hỗ trợ và không bịa đặt thông tin hoặc liên kết sự cố không có thật. Đồng thời, nó cũng gợi ý cách kiểm tra thông tin từ nguồn chính thức.",
-        "improvement": "Có thể thêm thông tin về việc kiểm tra trang trạng thái để tăng cường độ tin cậy.",
+        "reason": "Câu trả lời đã thừa nhận việc thiếu thông tin và không khẳng định trạng thái của Linear và Slack, nhưng cần làm rõ hơn về các giới hạn của hệ thống hiện tại. ",
+        "improvement": "Có thể đề cập rõ hơn về lý do không có thông tin nào từ các nguồn khác để cung cấp hỗ trợ.",
         "mechanical": {
           "violations": [],
           "score_cap": 100,
@@ -3140,10 +3076,10 @@
           "tool_steps": 0
         },
         "judge_usage": {
-          "prompt_tokens": 540,
-          "completion_tokens": 134,
-          "total_tokens": 674,
-          "cost": 0.0001614,
+          "prompt_tokens": 532,
+          "completion_tokens": 104,
+          "total_tokens": 636,
+          "cost": 0.0001422,
           "is_byok": false,
           "prompt_tokens_details": {
             "cached_tokens": 0,
@@ -3152,9 +3088,9 @@
             "video_tokens": 0
           },
           "cost_details": {
-            "upstream_inference_cost": 0.0001614,
-            "upstream_inference_prompt_cost": 8.1e-05,
-            "upstream_inference_completions_cost": 8.04e-05
+            "upstream_inference_cost": 0.0001422,
+            "upstream_inference_prompt_cost": 7.98e-05,
+            "upstream_inference_completions_cost": 6.24e-05
           },
           "completion_tokens_details": {
             "reasoning_tokens": 0,
@@ -3176,7 +3112,7 @@
       "judge_model": "openai/gpt-4o-mini",
       "result": {
         "status": "completed",
-        "answer": "Dưới đây là tổng hợp trạng thái của từng nhà cung cấp, theo yêu cầu:\n\n### 1. GitHub\n- **Trạng thái**: Tất cả hệ thống hoạt động bình thường.\n- **Indicator**: **none** (All Systems Operational)\n- **Thời điểm dữ liệu**: 2026-11-09T03:50:47.065020+00:00\n- **URL nguồn**: [GitHub Status](https://www.githubstatus.com)\n\n---\n\n### 2. npm\n- **Trạng thái**: Tất cả hệ thống hoạt động bình thường.\n- **Indicator**: **none** (All Systems Operational)\n- **Thời điểm dữ liệu**: 2026-11-10T14:45:51.077785+00:00\n- **URL nguồn**: [npm Status](https://status.npmjs.org)\n\n---\n\n### 3. Vercel\n- **Trạng thái**: Tất cả hệ thống hoạt động bình thường.\n- **Indicator**: **none** (All Systems Operational)\n- **Thời điểm dữ liệu**: 2026-11-10T14:45:50.457875+00:00\n- **URL nguồn**: [Vercel Status](https://www.vercel-status.com)\n- **Lưu ý**: Lần đầu gọi gặp lỗi Rate Limit (HTTP 429 giả lập). Hệ thống đã thực hiện thử lại có giới hạn (retry rate limit có giới hạn tối đa 3 lần), và ở lần thử thứ 2 đã thành công lấy được dữ liệu. Lỗi 429 là giới hạn rate limit có thể thử lại và không phải là sự cố (outage) của Vercel.\n\n---\n\n### 4. Cloudflare\n- **Trạng thái**: Có sự cố lớn - Một số hệ thống gặp sự cố.\n- **Indicator**: **major** (Partial System Outage)\n- **Thời điểm dữ liệu**: 2026-11-09T03:50:47.638054+00:00\n- **URL nguồn**: [Cloudflare Status](https://www.cloudflarestatus.com)\n\n---\n\n### 5. DigitalOcean\n- **Trạng thái**: Tất cả hệ thống hoạt động bình thường.\n- **Indicator**: **none** (All Systems Operational)\n- **Thời điểm dữ liệu**: 2026-11-10T14:45:52.407939+00:00\n- **URL nguồn**: [DigitalOcean Status](https://status.digitalocean.com)\n\n---\n\n### Chú ý\n- Không có căn cứ để suy đoán các sự cố có liên quan hay chung nguyên nhân với nhau. \n\nVui lòng tham khảo các liên kết đã cung cấp để xem thêm chi tiết hoặc cập nhật từ các dịch vụ tương ứng.",
+        "answer": "### Tổng hợp trạng thái từng dịch vụ CI theo snapshot:\n\n1. **GitHub (GitHub Actions)**\n   - **Trạng thái hiện tại:** All Systems Operational (indicator: \"none\")\n   - **Thời điểm snapshot:** 2026-11-09T03:50:47.065020+00:00\n   - **Nguồn:** [GitHub Status](https://www.githubstatus.com)\n\n2. **Cloudflare**\n   - **Trạng thái hiện tại:** Partial System Outage (indicator: \"major\")\n   - **Thời điểm snapshot:** 2026-11-09T03:50:47.638054+00:00\n   - **Nguồn:** [Cloudflare Status](https://www.cloudflarestatus.com)\n\n3. **Vercel (Vercel Builds)**\n   - **Trạng thái hiện tại:** All Systems Operational (indicator: \"none\")\n   - **Thời điểm snapshot:** 2026-11-10T14:45:50.457875+00:00\n   - **Nguồn:** [Vercel Status](https://www.vercel-status.com)\n   - **Xử lý retry rate limit có giới hạn:** Lần 1 gọi `get_vercel_status` gặp mã lỗi HTTP 429 giả lập (RATE_LIMITED, retriable=True, retry_after_seconds=0s). Hệ thống đã áp dụng quy định thử lại có giới hạn tối đa không quá 3 lần gọi, thực hiện gọi lại lần thứ 2 và thành công lấy được snapshot dữ liệu (tổng cộng 2 lần gọi, không vượt quá 3 lần). Mã lỗi 429 là giới hạn rate limit giả lập tạm thời của API kiểm tra, KHÔNG phải là sự cố (outage) của Vercel.\n\n4. **npm (npm publishing)**\n   - **Trạng thái hiện tại:** All Systems Operational (indicator: \"none\")\n   - **Thời điểm snapshot:** 2026-11-10T14:45:51.077785+00:00\n   - **Nguồn:** [npm Status](https://status.npmjs.org)\n\n5. **DigitalOcean**\n   - **Trạng thái hiện tại:** All Systems Operational (indicator: \"none\")\n   - **Thời điểm snapshot:** 2026-11-10T14:45:52.407939+00:00\n   - **Nguồn:** [DigitalOcean Status](https://status.digitalocean.com)\n\n### Về việc thông tin thiếu:\nCả 5 status tools đều đã được truy vấn thành công với đầy đủ dữ liệu trạng thái snapshot tổng quan; không có thông tin nào bị thiếu trong phạm vi dữ liệu snapshot cung cấp.\n\n### Khẳng định không suy luận nhân quả:\nMặc dù Cloudflare có trạng thái Partial System Outage (major), tuyệt đối không suy luận hay kết luận rằng sự cố này có quan hệ nhân quả hoặc chung nguyên nhân với các nhà cung cấp khác.",
         "trace": [
           {
             "event": "tool",
@@ -3250,89 +3186,6 @@
           {
             "event": "tool",
             "step": 1,
-            "name": "get_npm_status",
-            "arguments": {},
-            "result": {
-              "provider": "npm",
-              "captured_at": "2026-11-10T14:45:51.077785+00:00",
-              "overall": {
-                "indicator": "none",
-                "description": "All Systems Operational"
-              },
-              "components": [],
-              "incidents": [
-                {
-                  "id": "cc0t2r4403sy",
-                  "name": "Minor issues impacting package publish",
-                  "status": "resolved",
-                  "updated_at": "2026-11-07T15:05:05.127Z"
-                },
-                {
-                  "id": "hf0q2nhdk5cp",
-                  "name": "View package and auth outage on npmjs.com",
-                  "status": "resolved",
-                  "updated_at": "2026-10-26T06:30:19.136Z"
-                },
-                {
-                  "id": "56x3sh4qhr9s",
-                  "name": "Degraded Publish, Install, and View Package",
-                  "status": "resolved",
-                  "updated_at": "2026-10-22T11:59:57.769Z"
-                },
-                {
-                  "id": "xfp75s9j3bp8",
-                  "name": "Degraded Package Install and Publishing",
-                  "status": "resolved",
-                  "updated_at": "2026-10-22T04:24:18.534Z"
-                },
-                {
-                  "id": "nwrj52br2kjv",
-                  "name": "Issues with login and viewing packages",
-                  "status": "resolved",
-                  "updated_at": "2026-10-14T11:44:23.122Z"
-                },
-                {
-                  "id": "zff9xpz80gwf",
-                  "name": "Issues with npm package publish and private install",
-                  "status": "resolved",
-                  "updated_at": "2026-09-27T06:47:55.042Z"
-                },
-                {
-                  "id": "y5yr5z8grj7q",
-                  "name": "Package Publish Degradation",
-                  "status": "resolved",
-                  "updated_at": "2026-09-15T18:19:35.940Z"
-                },
-                {
-                  "id": "s219g6z13p2n",
-                  "name": "Publishing Packages Degraded Performance",
-                  "status": "resolved",
-                  "updated_at": "2026-09-15T16:35:22.661Z"
-                }
-              ],
-              "match_count": 50,
-              "returned": 8,
-              "note": "Chỉ tìm trong response incidents đã lấy; danh sách trả về tối đa 8 mục.",
-              "source": "https://status.npmjs.org"
-            }
-          },
-          {
-            "event": "tool",
-            "step": 1,
-            "name": "get_vercel_status",
-            "arguments": {},
-            "result": {
-              "ok": false,
-              "error": "RATE_LIMITED",
-              "http_status": 429,
-              "retry_after_seconds": 0,
-              "retriable": true,
-              "message": "429 giả lập; retry có giới hạn."
-            }
-          },
-          {
-            "event": "tool",
-            "step": 1,
             "name": "get_cloudflare_status",
             "arguments": {},
             "result": {
@@ -3397,6 +3250,89 @@
               "returned": 8,
               "note": "Chỉ tìm trong response incidents đã lấy; danh sách trả về tối đa 8 mục.",
               "source": "https://www.cloudflarestatus.com"
+            }
+          },
+          {
+            "event": "tool",
+            "step": 1,
+            "name": "get_vercel_status",
+            "arguments": {},
+            "result": {
+              "ok": false,
+              "error": "RATE_LIMITED",
+              "http_status": 429,
+              "retry_after_seconds": 0,
+              "retriable": true,
+              "message": "429 giả lập; retry có giới hạn."
+            }
+          },
+          {
+            "event": "tool",
+            "step": 1,
+            "name": "get_npm_status",
+            "arguments": {},
+            "result": {
+              "provider": "npm",
+              "captured_at": "2026-11-10T14:45:51.077785+00:00",
+              "overall": {
+                "indicator": "none",
+                "description": "All Systems Operational"
+              },
+              "components": [],
+              "incidents": [
+                {
+                  "id": "cc0t2r4403sy",
+                  "name": "Minor issues impacting package publish",
+                  "status": "resolved",
+                  "updated_at": "2026-11-07T15:05:05.127Z"
+                },
+                {
+                  "id": "hf0q2nhdk5cp",
+                  "name": "View package and auth outage on npmjs.com",
+                  "status": "resolved",
+                  "updated_at": "2026-10-26T06:30:19.136Z"
+                },
+                {
+                  "id": "56x3sh4qhr9s",
+                  "name": "Degraded Publish, Install, and View Package",
+                  "status": "resolved",
+                  "updated_at": "2026-10-22T11:59:57.769Z"
+                },
+                {
+                  "id": "xfp75s9j3bp8",
+                  "name": "Degraded Package Install and Publishing",
+                  "status": "resolved",
+                  "updated_at": "2026-10-22T04:24:18.534Z"
+                },
+                {
+                  "id": "nwrj52br2kjv",
+                  "name": "Issues with login and viewing packages",
+                  "status": "resolved",
+                  "updated_at": "2026-10-14T11:44:23.122Z"
+                },
+                {
+                  "id": "zff9xpz80gwf",
+                  "name": "Issues with npm package publish and private install",
+                  "status": "resolved",
+                  "updated_at": "2026-09-27T06:47:55.042Z"
+                },
+                {
+                  "id": "y5yr5z8grj7q",
+                  "name": "Package Publish Degradation",
+                  "status": "resolved",
+                  "updated_at": "2026-09-15T18:19:35.940Z"
+                },
+                {
+                  "id": "s219g6z13p2n",
+                  "name": "Publishing Packages Degraded Performance",
+                  "status": "resolved",
+                  "updated_at": "2026-09-15T16:35:22.661Z"
+                }
+              ],
+              "match_count": 50,
+              "returned": 8,
+              "note": "Chỉ tìm trong response incidents đã lấy; danh sách trả về tối đa 8 mục.",
+              "source": "https://status.npmjs.org"
             }
           },
           {
@@ -3536,24 +3472,93 @@
               "note": "Chỉ tìm trong response incidents đã lấy; danh sách trả về tối đa 8 mục.",
               "source": "https://www.vercel-status.com"
             }
+          },
+          {
+            "event": "tool",
+            "step": 2,
+            "name": "get_npm_status",
+            "arguments": {},
+            "result": {
+              "provider": "npm",
+              "captured_at": "2026-11-10T14:45:51.077785+00:00",
+              "overall": {
+                "indicator": "none",
+                "description": "All Systems Operational"
+              },
+              "components": [],
+              "incidents": [
+                {
+                  "id": "cc0t2r4403sy",
+                  "name": "Minor issues impacting package publish",
+                  "status": "resolved",
+                  "updated_at": "2026-11-07T15:05:05.127Z"
+                },
+                {
+                  "id": "hf0q2nhdk5cp",
+                  "name": "View package and auth outage on npmjs.com",
+                  "status": "resolved",
+                  "updated_at": "2026-10-26T06:30:19.136Z"
+                },
+                {
+                  "id": "56x3sh4qhr9s",
+                  "name": "Degraded Publish, Install, and View Package",
+                  "status": "resolved",
+                  "updated_at": "2026-10-22T11:59:57.769Z"
+                },
+                {
+                  "id": "xfp75s9j3bp8",
+                  "name": "Degraded Package Install and Publishing",
+                  "status": "resolved",
+                  "updated_at": "2026-10-22T04:24:18.534Z"
+                },
+                {
+                  "id": "nwrj52br2kjv",
+                  "name": "Issues with login and viewing packages",
+                  "status": "resolved",
+                  "updated_at": "2026-10-14T11:44:23.122Z"
+                },
+                {
+                  "id": "zff9xpz80gwf",
+                  "name": "Issues with npm package publish and private install",
+                  "status": "resolved",
+                  "updated_at": "2026-09-27T06:47:55.042Z"
+                },
+                {
+                  "id": "y5yr5z8grj7q",
+                  "name": "Package Publish Degradation",
+                  "status": "resolved",
+                  "updated_at": "2026-09-15T18:19:35.940Z"
+                },
+                {
+                  "id": "s219g6z13p2n",
+                  "name": "Publishing Packages Degraded Performance",
+                  "status": "resolved",
+                  "updated_at": "2026-09-15T16:35:22.661Z"
+                }
+              ],
+              "match_count": 50,
+              "returned": 8,
+              "note": "Chỉ tìm trong response incidents đã lấy; danh sách trả về tối đa 8 mục.",
+              "source": "https://status.npmjs.org"
+            }
           }
         ],
         "usage": [
           {
-            "prompt_tokens": 1497,
+            "prompt_tokens": 1754,
             "completion_tokens": 84,
-            "total_tokens": 1581,
-            "cost": 0.00027495,
+            "total_tokens": 1838,
+            "cost": 0.0001887,
             "is_byok": false,
             "prompt_tokens_details": {
-              "cached_tokens": 0,
+              "cached_tokens": 1664,
               "cache_write_tokens": 0,
               "audio_tokens": 0,
               "video_tokens": 0
             },
             "cost_details": {
-              "upstream_inference_cost": 0.00027495,
-              "upstream_inference_prompt_cost": 0.00022455,
+              "upstream_inference_cost": 0.0001887,
+              "upstream_inference_prompt_cost": 0.0001383,
               "upstream_inference_completions_cost": 5.04e-05
             },
             "completion_tokens_details": {
@@ -3563,21 +3568,21 @@
             }
           },
           {
-            "prompt_tokens": 3728,
-            "completion_tokens": 12,
-            "total_tokens": 3740,
-            "cost": 0.0004608,
+            "prompt_tokens": 3985,
+            "completion_tokens": 43,
+            "total_tokens": 4028,
+            "cost": 0.00032595,
             "is_byok": false,
             "prompt_tokens_details": {
-              "cached_tokens": 1408,
+              "cached_tokens": 3968,
               "cache_write_tokens": 0,
               "audio_tokens": 0,
               "video_tokens": 0
             },
             "cost_details": {
-              "upstream_inference_cost": 0.0004608,
-              "upstream_inference_prompt_cost": 0.0004536,
-              "upstream_inference_completions_cost": 7.2e-06
+              "upstream_inference_cost": 0.00032595,
+              "upstream_inference_prompt_cost": 0.00030015,
+              "upstream_inference_completions_cost": 2.58e-05
             },
             "completion_tokens_details": {
               "reasoning_tokens": 0,
@@ -3586,21 +3591,21 @@
             }
           },
           {
-            "prompt_tokens": 4298,
-            "completion_tokens": 760,
-            "total_tokens": 5058,
-            "cost": 0.0008223,
+            "prompt_tokens": 5111,
+            "completion_tokens": 779,
+            "total_tokens": 5890,
+            "cost": 0.00086925,
             "is_byok": false,
             "prompt_tokens_details": {
-              "cached_tokens": 3712,
+              "cached_tokens": 4864,
               "cache_write_tokens": 0,
               "audio_tokens": 0,
               "video_tokens": 0
             },
             "cost_details": {
-              "upstream_inference_cost": 0.0008223,
-              "upstream_inference_prompt_cost": 0.0003663,
-              "upstream_inference_completions_cost": 0.000456
+              "upstream_inference_cost": 0.00086925,
+              "upstream_inference_prompt_cost": 0.00040185,
+              "upstream_inference_completions_cost": 0.0004674
             },
             "completion_tokens_details": {
               "reasoning_tokens": 0,
@@ -3609,21 +3614,21 @@
             }
           },
           {
-            "prompt_tokens": 5295,
-            "completion_tokens": 600,
-            "total_tokens": 5895,
-            "cost": 0.00077985,
+            "prompt_tokens": 6426,
+            "completion_tokens": 626,
+            "total_tokens": 7052,
+            "cost": 0.0009075,
             "is_byok": false,
             "prompt_tokens_details": {
-              "cached_tokens": 4992,
+              "cached_tokens": 5760,
               "cache_write_tokens": 0,
               "audio_tokens": 0,
               "video_tokens": 0
             },
             "cost_details": {
-              "upstream_inference_cost": 0.00077985,
-              "upstream_inference_prompt_cost": 0.00041985,
-              "upstream_inference_completions_cost": 0.00036
+              "upstream_inference_cost": 0.0009075,
+              "upstream_inference_prompt_cost": 0.0005319,
+              "upstream_inference_completions_cost": 0.0003756
             },
             "completion_tokens_details": {
               "reasoning_tokens": 0,
@@ -3634,28 +3639,28 @@
         ]
       },
       "grade": {
-        "score": 80,
-        "raw_judge_score": 80,
+        "score": 75,
+        "raw_judge_score": 75,
         "dimensions": {
           "factuality": 30,
-          "completeness": 25,
+          "completeness": 20,
           "evidence": 15,
           "boundaries": 10
         },
         "status": "scored",
-        "reason": "Mặc dù câu trả lời cung cấp đủ thông tin về trạng thái của từng công cụ theo yêu cầu, một số thông tin thiếu về lỗi 429 của Vercel, và không dẫn nguồn cho thời gian xảy ra các sự cố. Thông tin trình bày về lỏng lỗi rate limit không hoàn toàn chính xác cần làm rõ hơn.",
-        "improvement": "Cần thêm thông tin về lý do và khả năng thử lại của Vercel khi gặp lỗi 429, cùng với thời gian cụ thể hơn cho các sự cố đã được báo cáo.",
+        "reason": "Thông tin về trạng thái các dịch vụ được trình bày nhưng vẫn còn thiếu một số yếu tố quan trọng như timestamp và không có dẫn nguồn cho từng trạng thái. Hơn nữa, dù có cập nhật về việc retry rate limit nhưng lại không hoàn toàn rõ ràng về điều này.",
+        "improvement": "Cần bổ sung thông tin timestamp cho tất cả các dịch vụ và dẫn nguồn chi tiết cho từng trạng thái để cải thiện độ tin cậy và đầy đủ của câu trả lời.",
         "mechanical": {
           "violations": [],
           "score_cap": 100,
-          "tool_calls": 6,
+          "tool_calls": 7,
           "tool_steps": 2
         },
         "judge_usage": {
-          "prompt_tokens": 4096,
-          "completion_tokens": 157,
-          "total_tokens": 4253,
-          "cost": 0.0007086,
+          "prompt_tokens": 4688,
+          "completion_tokens": 143,
+          "total_tokens": 4831,
+          "cost": 0.000789,
           "is_byok": false,
           "prompt_tokens_details": {
             "cached_tokens": 0,
@@ -3664,9 +3669,9 @@
             "video_tokens": 0
           },
           "cost_details": {
-            "upstream_inference_cost": 0.0007086,
-            "upstream_inference_prompt_cost": 0.0006144,
-            "upstream_inference_completions_cost": 9.42e-05
+            "upstream_inference_cost": 0.000789,
+            "upstream_inference_prompt_cost": 0.0007032,
+            "upstream_inference_completions_cost": 8.58e-05
           },
           "completion_tokens_details": {
             "reasoning_tokens": 0,
